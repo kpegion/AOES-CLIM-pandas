@@ -120,14 +120,14 @@ While its installing, let's take a look at what is in this file using another wi
 ~~~
 $ more environment.yml
 ~~~
-{. :language-bash}
+{: .language-bash}
 
 When we install the new environment, it will get the latest available versions of each package we listed in the environment file unless we specify a certain version. If we want to update to the latest version of our packages, we can run:
 
 ~~~
 $ conda env update -f environment.yml
 ~~~
-{. :language-bash}
+{: .language-bash}
 
 Anytime we want to add a new Python package to our environment, we can add it to our `environment.yml` file and run the same update command.
 
@@ -135,31 +135,31 @@ Once the environemnt is done installing, `conda` tells us what to do:
 ~~~
 $ conda activate clim680
 ~~~
-{. :language-bash}
+{: .language-bash}
 
 Now let's check if we have an updated version of `xarray`
 ~~~
 $ conda list | grep xarray
 ~~~
-{. :language-bash}
+{: .language-bash}
 
 ~~~
  xarray                    0.16.1                     py_0    conda-forge
 ~~~
-{. :output}
+{: .output}
 
 There is one more command we need to run in order to tell Jupyter about our new environment:
 
 ~~~
 $ python -m ipykernel install --user --name clim680 --display-name "Python (clim680)"
 ~~~
-{. :language-bash}
+{: .language-bash}
 
 Now we will need to close our Jupyter notebook and get our COLA window back.  At the COLA prompt, type:
 ~~~
 $ conda activate clim680
 ~~~
-{. :language-bash}
+{: .language-bash}
 
 Re-launch Jupyter. Open your notebook and click in the upper right corner where is says Python 3 and switch it to Python(clim680)
 What do you see that is different?
@@ -173,7 +173,7 @@ If you run in a different Python interpreter, you will need to do the following 
 ~~~
 $ conda activate clim680
 ~~~
-{. :language-bash}
+{: .language-bash}
 
 In the future, you may want to create different environments for different projects. If you provied someone with an `environment.yml` file for your project, it will guarantee they can reproduce the environment you ran it in and be able to run your codes.
 
