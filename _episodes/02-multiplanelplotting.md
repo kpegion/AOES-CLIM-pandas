@@ -16,11 +16,8 @@ Often we want to plot multiple panels on a single page.   As an example, here's 
 
 This plot contains a grid with 9 spaces, some of which show a map and some of which are empty.  We will learn several ways to make multiple panels on the same page. 
 
-## `plt.subplot`
-
-`Matplotlib` has a subplotting capability similar to `Matlab`.  We will test an exanple using Sea Surface Temperature data.
-
-Link to notebook
+[Link to notebook](https://github.com/kpegion/clim680-codes/blob/gh-pages/src/multipanel.ipynb)
+If it does not load (or does not load the figures and animation), go to nbviewer.jupyter.org and enter it in the search bar.
 
 
 
